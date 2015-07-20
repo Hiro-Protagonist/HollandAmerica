@@ -1,0 +1,15 @@
+<!-- start countdown script -->
+<script type="text/javascript">
+  function setDate() {
+    var today = new Date();
+    var releaseDate = new Date('2015/08/30 00:00:00 AM');
+    var timeDiff = releaseDate.getTime() - today.getTime();
+    var dayDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+
+    $( "#daysLeft" ).text(dayDiff);
+  }
+
+
+$(setDate);
+</script>
+<!-- end countdown script -->
